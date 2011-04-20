@@ -1,5 +1,4 @@
 	body	{ min-height: 100%; font: 11px Trebuchet MS; }
-	h1	{ color: #9d9d9d; font: 18px Verdana;}
 
 	#wraper	{ width:989px; margin: auto; position: relative; height:100%;  min-height: 450px;}
 
@@ -61,7 +60,7 @@
 ------------------------------ */
 	.result { bottom: 42px; color: #383530; font: 15px/1.5 Verdana; left: 500px; overflow: auto; position: absolute; right: 20px; top: 48px;}
 
-	#resultSection	{bottom: 0; left: 0; overflow: auto; position: absolute; right: 0; top: 25px; white-space:pre-wrap;}
+	#resultSection	{ overflow: auto; white-space:pre-wrap;}
 	/*#resultSection { margin-top:7px;}*/
 		#resultSection span:hover	{ background:#e1dfff;}
 		#resultSection em[title]	{border-bottom:1px dotted; color:#86858A; cursor:pointer;background:transparent !important; font-style:normal; }

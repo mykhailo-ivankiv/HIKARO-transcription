@@ -53,7 +53,6 @@ function insertAtCaret(txtarea, text) {
 	txtarea.scrollTop = scrollPos;
 }
 
-
 var Transcript = (function () {
 	var _this = this;
 	this.makeTranscription = function() {
@@ -91,10 +90,9 @@ var Transcript = (function () {
 					}
 				}
 			} else { //&# 8203; - make word wrap;
-				_this.transcriptedHTML += '</span>' + source[i] +'<span>';
+				_this.transcriptedHTML += '</span>' + source[i] +'<span>';   
 				_this.sourceHTML += '</span>' + source[i] +'<span>';
 			}
-
 		}
 		_this.transcriptedHTML += '</span>';
 		_this.sourceHTML += '</span>'
@@ -186,7 +184,8 @@ var keyboard = {
 }
 
 $(document).ready(function() {
-	Transcript.init($('#editSection textarea'), $('#resultSection'), $('.highlite:first'));
-	keyboard.init();
-	$('#makeTranscription').bind('click', Transcript.makeTranscription);
+	console.log($('#editSection textarea'), $('#resultSection'), $('.highlite:first'));
+	Transcript.init($('textarea'), $('#resultSection'), $('.highlite:first'));
+//	keyboard.init();
+//	$('#makeTranscription').bind('click', Transcript.makeTranscription);
 });
