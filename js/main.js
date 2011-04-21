@@ -108,6 +108,8 @@ var Transcript = (function () {
 				.bind('mouseleave',function(){_this.sourceOutput.find('span:eq('+ _this.transcriptinOutput.find('span').index(this) +')').removeClass('active');});
 
 		this.sourceOutput.html (this.sourceHTML);
+		console.log(this.codeSource.height(this.sourceOutput.height()));
+//		this.codeSource.heigh(this.sourceOutput.height());
 	};
 
 	/**
