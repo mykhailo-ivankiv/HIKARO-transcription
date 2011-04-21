@@ -108,8 +108,7 @@ var Transcript = (function () {
 				.bind('mouseleave',function(){_this.sourceOutput.find('span:eq('+ _this.transcriptinOutput.find('span').index(this) +')').removeClass('active');});
 
 		this.sourceOutput.html (this.sourceHTML);
-		console.log(this.codeSource.height(this.sourceOutput.height()));
-//		this.codeSource.heigh(this.sourceOutput.height());
+		this.codeSource.height(this.sourceOutput.height());
 	};
 
 	/**
@@ -186,8 +185,7 @@ var keyboard = {
 }
 
 $(document).ready(function() {
-	console.log($('#editSection textarea'), $('#resultSection'), $('.highlite:first'));
-	Transcript.init($('textarea'), $('#resultSection'), $('.highlite:first'));
+	Transcript.init($('#source'), $('#result'), $('#highlite'));
 //	keyboard.init();
 //	$('#makeTranscription').bind('click', Transcript.makeTranscription);
 });
