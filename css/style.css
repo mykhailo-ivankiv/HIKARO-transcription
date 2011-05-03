@@ -2,23 +2,35 @@
 
 	/* Layout */
 
-	header	{font-family:Trebuchet MS; position:fixed; left:0; right:0; top:0px; height: 30px; z-index:99}
-	header	h1	{color:#4d4d4d;}
+	header	{font-family:Trebuchet MS; position:fixed; left:0; right:0; top:0px; height: 30px; z-index:99; background:#e0e0e0; box-shadow: 0 0 3px Black;}
+	header	h1	{color:#4d4d4d; padding: 0 13px;}
 
-	section	{ position: absolute; top:32px; bottom: 32px; width: 100%;}
+	section	{ position: absolute; top:25px; bottom: 25px; width: 100%;}
 
-	footer	{position: fixed; bottom:0px; left:0; right:0; height: 30px; }
+	footer	{ background: none repeat scroll 0 0 #E0E0E0; border-radius: 5px 5px 5px 5px; bottom: 5px; box-shadow: 0 0 2px Black;
+			height: 20px; left: 0; margin: auto; position: fixed; right: 0; width: 970px;}
 
-	#wrap	{height: 100%; width:900px; outline:1px solid; margin:0px auto; position: relative;}
+	#wrap      {height: 100%; width:970px; margin:0px auto; position: relative;}
+	#wrap  h1  { position: relative; z-index: 105;}
 
-	#result, #highlite, #source {white-space: pre-wrap; font: 12px/1.5 Verdana; }
+	#result, #highlite, #source {padding:12px; white-space: pre-wrap; font: 15px/1.5 Verdana; width:448px;}
 
-	#source	{ background: transparent; border: none; min-height: 100%; overflow:hidden;}
+	#source	{background:transparent; border: none; min-height: 100%; overflow:hidden; width: 450px;}
 
-	#highlite	{border: none; min-height: 100%; left: 1px; position: absolute; top: 0; color: red; overflow: auto; z-index:-1; width:448px;}
-	#highlite span.active, #result span:hover	{ background:#e1dfff; }
+	#highlite	{
+		border-radius: 5px; box-shadow: 0 0 6px #CECECE inset; background: WHITE;
+		border: none; min-height: 100%; left: 1px; position: absolute; top: 0; color: white; overflow: auto; z-index:-1; width:448px;
+	}
+	#highlite span.active,
+	#highlite span:hover,
+	#result span.active,
+	#result span:hover	{ background:#e1dfff; }
 
-	#result	{ overflow: auto; white-space:pre-wrap;}
+	#result	{ overflow: auto; white-space:pre-wrap; width:472px}
+	#result  em  {border-bottom: 1px dotted; color:#86858A; font-style: normal;}
 
-	.controls	{width: 150px; margin:5px auto; text-align:center; background:#a5a5a5;}
+	.controls	{ background: #A5A5A5; border-radius: 7px; box-shadow: 0 5px 9px rgba(0, 0, 0, 0.27) inset;
+	height: 15px; margin: 5px auto; padding: 3px 10px; width: 150px;}
 
+	.i-lightbulb	{ background-image: url(i/lightbulb.png); }
+	.i-consulting	{ background-image: url(i/consulting.png); }
