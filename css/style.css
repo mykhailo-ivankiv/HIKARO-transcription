@@ -1,0 +1,87 @@
+	body	{ min-height: 100%; font: 11px Trebuchet MS; }
+	h1	{ color: #9d9d9d; font: 18px Verdana;}
+
+	#wraper	{ width:989px; margin: auto; position: relative; height:100%;  min-height: 450px;}
+
+/* Aside content
+------------------------------ */
+	#aside	{display:none; position: absolute; z-index:22; top:40px; bottom:40px; left:10px; padding:0 30px 0; width:168px; font: 12px Verdana; color: #333333; background: transparent url('img/horizontal-back.png') repeat-y -632px 0;}
+	#aside	header	{ left:2px; top:-15px; background: transparent url(img/main-back.png) repeat-y 0 0; position:absolute; height:15px; width: 228px;}
+	#aside	footer	{ left:2px; bottom: -15px;  background:transparent url(img/main-back.png) repeat-y 0 -23px; position:absolute; height:15px; width: 228px;}
+
+	/*Article*/
+		#aside	article	{ float:left; height:100%; overflow:auto; color:#333333;}
+		#aside	article	h1	{ margin-bottom:-10px; color:#333333;}
+		#aside	article	p	{ margin:15px 0 0 0; font:12px}
+
+/* Edit Content
+------------------------------ */
+	#editSection	{  min-height:200px; position: absolute; top: 44px;  bottom:40px; left:20px ; width:450px; background:#ffffff}
+	/*#editSection	header	{ right:-1px; top:-15px; background: transparent url(img/main-back.png) repeat-y 0 -40px; position:absolute; height:15px; width: 625px;}*/
+	/*#editSection	footer	{ left:1px; bottom: -13px;  background:transparent url(img/main-back.png) repeat-y 0 -81px; position:absolute; height:13px; width: 625px;}*/
+	#editSection	h1	{ margin : 5px}
+
+	#editSection	em	{position:absolute;}
+
+		#editSection	em.t,
+		#editSection	em.b	{background:url("img/vertical-back-1.1.png");  left: 0; right:0; height:14px;}
+
+		#editSection	em.r,
+		#editSection	em.l	{ background: url("img/horizontal-back-1.1.png");}
+
+		#editSection	em.t	{ background-position: 0 0; top: -14px; }
+		#editSection	em.b	{ background-position: 0 14px; bottom: -14px;}
+
+		#editSection	em.r	{background-position: -14px 0; bottom: 0; right: -14px; top: 0; width: 14px;}
+		#editSection	em.l	{background-position: 0 0; left:-14px;  top:0; bottom:0; width:14px;}
+
+		#editSection	em.tl,
+		#editSection	em.tr,
+		#editSection	em.br,
+		#editSection	em.bl	{background: url("img/main-back-1.1.png")}
+
+		#editSection	em.tl	{top:-14px; left:-14px; height:14px; width:14px; background-position:0 0;}
+		#editSection	em.tr	{top:-14px; right:-14px; height:14px; width:14px; background-position:-14px 0; }
+		#editSection	em.br	{bottom:-14px; right:-14px; height:14px; width:14px; background-position:-14px -14px;}
+		#editSection	em.bl	{bottom:-14px; left:-14px; height:14px; width:14px;  background-position:0 -14px;}
+
+
+	#editSection	form	{ bottom: 0; left: 5px; position: absolute; right: -12px; top: 30px;}
+
+	#editSection	textarea	{ background: none repeat scroll 0 0 transparent; border: medium none; display: block;
+		font: 15px/1.5 Verdana; height: 100%; left: 1px; position: absolute; top: 0; width: 100%; z-index: 1;}
+
+	#editSection	.highlite	{white-space:pre-wrap; border: medium none; font: 15px/1.5 Verdana; height: 100%; left: 2px;
+								min-width: 99%; position: absolute; top: 0; z-index: 0; color: #FFFFFF; overflow: auto;}
+	#editSection	.highlite span.active	{ background:#e1dfff;}
+
+	#makeTranscription {font: bold 10px Verdana}
+
+/* Result section
+------------------------------ */
+	.result { bottom: 42px; color: #383530; font: 15px/1.5 Verdana; left: 500px; overflow: auto; position: absolute; right: 20px; top: 48px;}
+
+	#resultSection	{bottom: 0; left: 0; overflow: auto; position: absolute; right: 0; top: 25px; white-space:pre-wrap;}
+	/*#resultSection { margin-top:7px;}*/
+		#resultSection span:hover	{ background:#e1dfff;}
+		#resultSection em[title]	{border-bottom:1px dotted; color:#86858A; cursor:pointer;background:transparent !important; font-style:normal; }
+
+	#note {position:absolute; bottom:15px; left:680px; color:#9D9D9D; font: 10px Verdana; display: none;}
+
+/* Keyboard
+------------------------------ */
+	#keyboard	{ display:none; bottom:30px; left:250px; padding:3px 7px; position:absolute; width:608px; background:#D6D7DB url(img/horizontal-back.png) repeat-y scroll -862px 0;}
+	#keyboard	header	{ right:-2px; top:-8px; background: transparent url(img/main-back.png) repeat-y 0 -95px; position:absolute; height:8px; width: 625px;}
+	#keyboard	footer	{ background:transparent url(img/main-back.png) repeat-y scroll 0 -109px; bottom:-8px; height:8px; left:-1px; position:absolute; width:625px;}
+
+	#keyboard	div	{ cursor:pointer; color:#86858A; float:left; height:26px; margin:2px 6px; padding-top:7px; text-align:center; width:34px;background:transparent url(img/main-back.png) no-repeat scroll 0 -117px; font:15px Verdana;}
+	#keyboard	div:hover	{color: #000000;}
+
+	#keyboard	.main-keyboard	{ background:none; float:none; height:auto; margin:0 auto; width:600px;}
+	#keyboard	.sub-keyboard	{ background:none; float:none; height:auto; margin:0 auto; width:230px;}
+
+	#keyboard	#keySwitch	{ background:none !important; text-align:right; float:right; height:auto; position:absolute; bottom:10px; right:10px; width:150px;}
+	#keyboard	#keySwitch	h4	{color:#86858A; font: bold 12px Verdana; cursor:default; margin-bottom: 10px; width:100%;}
+	#keyboard	#keySwitch	h4:hover	{color:#86858A;}
+	#keyboard	#keySwitch	a	{font: bold 10px Verdana; display:block; margin:3px;}
+	#keyboard	#keySwitch	a.active	{color:#383530; text-decoration:none; cursor: default;}

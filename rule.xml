@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <rules>
+ 	<a value='ей'>
+		<b value='аб'/>
+		<c value='ац'/>
+	</a>
+	<b value='бі' />
+	<c value='сі' />
+ </rules>
